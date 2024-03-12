@@ -23,7 +23,9 @@ app.use('/api/course',courseRoute);
 app.use('/api/grade',gradeRoute);
 app.use('/api/schedule',scheduleRoute);
 app.use('/api/announce',announcementRoute);
-
+app.use('/',(request, response) => {
+    response.send("Welcome")
+})
 
 
 export default app;
