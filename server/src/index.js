@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(logHandler);
 
-app.use("/", (request, response) => {
+app.get("/", (request, response) => {
   response.send("Welcome");
 });
 
